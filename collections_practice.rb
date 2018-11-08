@@ -43,3 +43,8 @@ end
 def add_s(array)
   array.each_with_index.collect {|word, index| index != 1 ? word << "s" : word}
 end
+
+def swap_elements_custom(array, index=1, destination_index=2)
+  array[index], array[destination_index] = array[destination_index], array[index]
+  array
+end
